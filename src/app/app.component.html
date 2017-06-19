@@ -1,3 +1,12 @@
 <h1>
   {{title}}
 </h1>
+<div *ngIf="message">
+  <h4>Message from server:</h4>
+  <pre>{{message}}</pre>
+</div>
+<div *ngIf="error">
+  <h4>If you can see this then the rest server may still be starting or you need to start it!</h4>
+  <p>E.g. mvn spring-boot:run or run in IDE with DemoApplication.java as starting point.</p>
+  <pre>{{error | json}}</pre>
+</div>
