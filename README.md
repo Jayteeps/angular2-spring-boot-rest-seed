@@ -10,4 +10,8 @@ To run the local angular2 dev server, proxying to the java server:
 - sh ./proxy.sh
 
 Navigate to localhost:4200
+
 Editing code will invoke live reload.
+
+To build the final jar run:
+- mvn package
